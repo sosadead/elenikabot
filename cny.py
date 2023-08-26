@@ -1,24 +1,4 @@
-from bs4 import BeautifulSoup
-import requests
 
-
-url = "http://ru.investing.com/currencies/cny-rub"
-page = requests.get(url)
-filter = []
-curs = []
-soup = BeautifulSoup(page.text, 'html.parser')
-filter = soup.findAll('span', class_='text-2xl')
-for i in filter:
-     curs.append(i.text)
-for i in curs:
-    print(i)
-
-
-curs1 = (i.replace(',','.'))
-cny = float(curs1)
-print(cny)
-CNY = cny + 1.5
-print(CNY)
 
 
 
