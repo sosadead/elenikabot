@@ -3,7 +3,7 @@ import telebot
 from telebot import types
 
 
-bot = telebot.TeleBot('6318582915:AAGh0ftK7zfCUFf-gCUrleZeiRe0KmKs1K4')
+bot = telebot.TeleBot
 
 amount = 0
 commission = 0
